@@ -1,13 +1,25 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5e50e;
+    background-color: #383503;
     color: rgb(36, 27, 0);
     margin: 0;
     padding: 10;
 }
 
+a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #6846ff;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
 #content {
-    background-color: khaki;
+    background-color: #a59b0b;
     width: 60%;
     margin: auto;
     border: 1px solid #000000;
@@ -24,14 +36,14 @@ body {
 #blogposts {
     margin: 10px;
     border: 1px solid #000000;
-    background-color: blueviolet;
+    background-color: rgb(132, 0, 255);
 }
 
 .post {
     margin: 10px;
     padding: 10px;
     border: 1px solid #000000;
-    background-color: #746aff;
+    background-color: #4238ff;
 }
 
 .post .left {
