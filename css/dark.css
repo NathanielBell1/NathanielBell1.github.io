@@ -1,7 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #383503;
-    color: rgb(36, 27, 0);
     margin: 0;
     padding: 10;
 }
@@ -19,24 +17,29 @@ a:visited {
 }
 
 #content {
-    background-color: #a59b0b;
+    background-color: #004b04;
     width: 60%;
     margin: auto;
     border: 1px solid #000000;
+    border-radius: 10px;
 }
 
 #banner {
-    background-color: #c50000;
+    background-color: #810000;
     text-align: center;
     border: 1px solid #000000;
     margin: 30px;
     padding: 10px;
+    border-radius: 10px;
 }
 
 #blogposts {
     margin: 10px;
     border: 1px solid #000000;
-    background-color: rgb(132, 0, 255);
+    background-color: rgb(65, 0, 126);
+    text-align: center;
+    display: flex;
+    border-radius: 10px;
 }
 
 .post {
@@ -44,6 +47,8 @@ a:visited {
     padding: 10px;
     border: 1px solid #000000;
     background-color: #4238ff;
+    width: 50%;
+    border-radius: 10px;
 }
 
 .post .left {
@@ -59,4 +64,13 @@ a:visited {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+.postOne {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #000000;
+    background-color: #4238ff;
+    width: 96%;
+    text-align: center;
+    border-radius: 10px;
 }

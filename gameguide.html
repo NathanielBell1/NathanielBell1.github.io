@@ -5,21 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link id="lightSheet" rel="stylesheet" href="css/style.css">
+    <link id="darkSheet" rel="stylesheet" media="none" href="css/dark.css">
+    <style>
+        body {
+            background-image: url("img/download.jpg")
+        }
+    </style>
 </head>
 
 <body>
     <div id="content">
         <div id="banner">
             <h1>My Website</h1>
-            <a href="about.html">About Me</a> |
-            <a href="gameguide.html">Get To School</a>
+            <p>Here is where you can access my game and learn more about it!</p>
         </div>
 
         <div id="blogposts">
             <div class="post">
                 <h2>Play My Game</h2>
                 <p>Click <a href="GetToSchool/">here</a> to play my game.</p>
+                <p>I have spent some time trying to make this game at the best of my ability and I hope you all like it.</p>
             </div>
             <div class="post">
                 <h2>Gallery</h2>
@@ -35,8 +41,40 @@
                     </div>
             </div>
         </div>
+        <div  class="postOne">
+            <h2>Here are more links to my other pages.</h2>
+            <a href="index.html">Home Page</a> | 
+            <a href="about.html">About Me</a> |
+            <a href="gameguide.html">Get To School</a> |
+            <a href="#" onclick="changeSheet()">Change Mode</a>
+            <h2>↓Here is the link to play my game↓</h2>
+            <p>Click <a href="GetToSchool/">here</a> to play my game.</p>
+        </div>
 
     </div>
 </body>
+
+<script>
+
+    var lightMode = true;
+
+    function changeSheet() {
+        // make lightMode equal NOT lightMode
+        lightMode = !lightMode;
+        var lightSheet = document.getElementById("lightSheet");
+        var darkSheet = document.getElementById("darkSheet");
+        // if lightMode turned off, display dark stylesheet
+        if (lightMode == false) {
+            console.log("Turning dark mode on...");
+            darkSheet.media = "";
+            lightSheet.media = "none";
+        } else {
+            console.log("Turning light mode on...");
+            darkSheet.media = "none";
+            lightSheet.media = "";
+        }
+    }
+
+</script>
 
 </html>

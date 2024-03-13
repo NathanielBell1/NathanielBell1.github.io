@@ -1,37 +1,42 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5e50e;
-    color: rgb(36, 27, 0);
     margin: 0;
     padding: 10;
 }
 
 #content {
-    background-color: khaki;
+    background-color: rgb(56, 180, 63);
     width: 60%;
     margin: auto;
     border: 1px solid #000000;
+    border-radius: 10px;
 }
 
 #banner {
-    background-color: #c50000;
+    background-color: #f86565;
     text-align: center;
     border: 1px solid #000000;
     margin: 30px;
     padding: 10px;
+    border-radius: 10px;
 }
 
 #blogposts {
+    text-align: center;
     margin: 10px;
     border: 1px solid #000000;
-    background-color: blueviolet;
+    background-color: rgb(132, 0, 255);
+    display: flex;
+    border-radius: 10px;
 }
 
 .post {
     margin: 10px;
     padding: 10px;
     border: 1px solid #000000;
-    background-color: #746aff;
+    background-color: #b399f8;
+    width: 50%;
+    border-radius: 10px;
 }
 
 .post .left {
@@ -47,4 +52,14 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.postOne {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #000000;
+    background-color: #b399f8;
+    width: 96%;
+    text-align: center;
+    border-radius: 10px;
 }

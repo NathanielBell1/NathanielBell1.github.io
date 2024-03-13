@@ -7,37 +7,51 @@
     <title>My Website</title>
     <link id="lightSheet" rel="stylesheet" href="css/style.css">
     <link id="darkSheet" rel="stylesheet" media="none" href="css/dark.css">
-    <script>
-        var alertTimes = 0;
-        while (alertTimes < 3) {
-            alertTimes += 1;
-            alert("You have been alerted " + alertTimes + " times. ");
+    <style>
+        body {
+            background-image: url("img/download.jpg")
         }
-    </script>
+    </style>
 </head>
 
 <body>
     <div id="content">
         <div id="banner">
             <h1>My Website</h1>
-            <a href="about.html">About Me</a> |
-            <a href="gameguide.html">Get To School</a>
-            <a href="#" onclick="changeSheet()">Change Mode</a>
+            <p>Thank you for coming to my website today and hope you enjoy!</p>
         </div>
 
         <div id="blogposts">
             <div class="post">
                 <h2>About Me</h2>
-                <p>My name is Nathaniel Bell and I like to game.</p>
+                <p>My name is Nathaniel and I made a game for all of you to play, It took some time and I hope you
+                    take some time to
+                    enjoy it.</p>
                 <p>Click <a href="about.html">here</a> to learn more.</p>
             </div>
+
+
+            <div class="post">
+                <h2 style="display: block;">Get To School</h2>
+                <img src="img/Game Homescreen.png" alt="Game Loading Screen" class="left">
+                <p>My game is super fun and easy to play and it is about getting to school (hopfully alive). It has some
+                    action in it
+                    and I hope you have time to play it.</p>
+                <p>Click <a href="gameguide.html">here</a> to learn more.</p>
+            </div>
+
         </div>
-        <div class="post">
-            <h2 style="display: block;">Get To School</h2>
-            <img src="img/Game Homescreen.png" alt="Game Loading Screen" class="left">
-            <p>Get To School is a smash hit Indie success about getting to school... presumably</p>
-            <p>Click <a href="gameguide.html">here</a> to learn more.</p>
+        <div class="postOne">
+            <h2>Here are more links to my other pages.</h2>
+            <a href="index.html">Home Page</a> | 
+            <a href="about.html">About Me</a> |
+            <a href="gameguide.html">Get To School</a> |
+            <a href="#" onclick="changeSheet()">Change Mode</a>
+            <h2>↓Here is the link to play my game↓</h2>
+            <p>Click <a href="GetToSchool/">here</a> to play my game.</p>
         </div>
+
+    </div>
 
     </div>
 </body>
